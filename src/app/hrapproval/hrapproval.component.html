@@ -1,0 +1,38 @@
+
+    <div>
+      <h2>HR Approval</h2>
+    <form>        
+        <table>
+            <thead>
+                <tr>
+                   <th>Employee Id</th>    
+                  <th>Emplyee Name</th>
+                  <th>Email Id</th>
+                  <th>Mobile Number</th>
+                  <th>Designation</th>                  
+                  <th>Qualification</th> 
+                  <th>Experience</th>                     
+                  <th>Placement count</th> 
+                  <th>Batch handled</th>                     
+                  <th>Status</th>  
+                </tr>
+              </thead>
+                <tbody>
+                    <tr *ngFor="let skilMdl of skillmodel">
+                        <td>{{skilMdl.empMaster.employee_Id}}</td>
+                        <td>{{skilMdl.empMaster.emplyeeName}}</td>
+                        <td>{{skilMdl.empMaster.email_Id}}</td>
+                        <td>{{skilMdl.empMaster.mobileNumber}}</td>
+                        <td>{{skilMdl.empMaster.designation}}</td>                          
+                        <td>{{skilMdl.qualification}}</td>
+                        <td>{{skilMdl.experiance}}</td>
+                        <td>{{skilMdl.placementCount}}</td>
+                        <td>{{skilMdl.batchCount}}</td>
+                        <td>{{skilMdl.status}}</td>
+                        <td><button  (click)="aproveEmp(skilMdl)"> Update </button></td>                                                
+                  </tr>
+                  </tbody>
+                  </table>
+  </form>
+    </div>
+    

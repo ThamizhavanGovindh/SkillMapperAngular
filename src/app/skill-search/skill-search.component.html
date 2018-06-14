@@ -1,0 +1,11 @@
+<div>
+    <h2 class="text-center">Skill Search</h2>
+  <form>                     
+        <label for="skill">Skill:</label>
+        <input type="skill" [(ngModel)]="skillmdl.skill" name="skill">
+    <button (click)="skillsearch()">Search</button>
+  </form>
+  </div>
+  <div>
+      <app-view-skill [skillmdlArr]="skillmdlArr"></app-view-skill>
+  </div>

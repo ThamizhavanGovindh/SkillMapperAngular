@@ -1,0 +1,21 @@
+<div *ngIf="employee">    
+  <form>              
+        <div><label for="Employee Id">Employee Id: </label>{{employee.employee_Id}}</div>
+        <div><label for="BatchCount">Batch Count:</label>
+        <input [(ngModel)]="skillModel.batchCount" name="batchCount"></div><br>
+        <div><label for="experiance">Experiance:</label>
+        <input [(ngModel)]="skillModel.experiance" name="experiance"></div><br>
+        <div><label for="numStudentHandled">Number of student handled:</label>
+          <input [(ngModel)]="skillModel.numStudentHandled" name="numStudentHandled"></div><br>
+        <div><label for="placementCount">Placement Count:</label>
+        <input [(ngModel)]="skillModel.placementCount" name="placementCount"></div><br>
+        <div><label for="certificate">Certification:</label>
+        <input [(ngModel)]="skillsModel.certificate" name="certificate"></div><br>
+        <div> <label for="skill">Skill:</label>
+        <input type="skill" [(ngModel)]="skillsModel.skill" name="skill"></div><br>                    
+    <button (click)="skillRegister()">Register</button>
+  </form>
+</div>
+<div *ngIf="skilid">
+<!-- {{skillmodel: skilid}} -->
+</div>

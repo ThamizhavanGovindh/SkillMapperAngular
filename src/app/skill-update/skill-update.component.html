@@ -1,0 +1,10 @@
+<div *ngIf="skilMdl">    
+    <form>              
+          <!-- <div><label for="Employee Id">Employee Id: </label>{{employee.employee_Id}}</div>           -->
+          <div><label for="certificate">Certification:</label>
+          <input [(ngModel)]="skillModel.certificate" name="certificate"></div><br>
+          <div> <label for="skill">Skill:</label>
+          <input type="skill" [(ngModel)]="skillModel.skill" name="skill"></div><br>                    
+      <button (click)="skillUpdate()">Register</button>
+    </form>
+  </div>

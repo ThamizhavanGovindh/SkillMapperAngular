@@ -1,0 +1,25 @@
+
+<div>   
+    <h2 class="text-center">Employee Registration</h2>
+  <form>      
+       <div> <label for="emplyeeName">Name:</label>
+        <input [(ngModel)]="employeemodel.emplyeeName" name="emplyeeName"></div><br>
+        <div><label for="gender">Gender:</label>
+        <input [(ngModel)]="employeemodel.gender" name="emplyeeName"></div><br>
+        <div><label for="gender">Date of Birth:</label>
+        <input [(ngModel)]="employeemodel.dateOfBirth" name="emplyeeName"></div><br>
+        <label for="mobileNumber">Mobile Number:</label>
+        <input [(ngModel)]="employeemodel.mobileNumber" name="emplyeeName"><br>
+        <label for="emailId">Email Address:</label>
+        <input [(ngModel)]="employeemodel.emailId" name="emailId"><br>
+        <label for="designation">Designation:</label>
+        <input type="email" [(ngModel)]="employeemodel.designation" name="designation"><br>
+        <label for="joinDate">Join date:</label>
+        <input type="email" [(ngModel)]="employeemodel.joinDate" name="designation"><br>
+        <label for="address">Address:</label>
+        <input [(ngModel)]="employeemodel.address" name="address"><br>
+      <label for="qualification">Qualification:</label>
+      <input [(ngModel)]="employeemodel.qualification" name="qualification"><br>          
+    <button (click)="addEmployee()">ADD EMPLOYEE</button>
+  </form>
+  </div>

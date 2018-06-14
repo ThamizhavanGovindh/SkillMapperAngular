@@ -1,0 +1,34 @@
+
+    <div>
+        <h2>Skill Registration</h2>
+      <form>        
+          <table>
+              <thead>
+                  <tr>
+                     <th>Employee Id</th>    
+                    <th>Emplyee Name</th>
+                    <th>Gender</th>
+                    <th>Mobile Number</th>
+                    <th>Designation</th>
+                    <th>Address</th>
+                    <th>Qualification</th>             
+                  </tr>
+                </thead>
+                  <tbody>
+                      <tr *ngFor="let employee of employeemodel">
+                          <td>{{employee.employee_Id}}</td>
+                          <td>{{employee.emplyeeName}}</td>
+                          <td>{{employee.gender}}</td>
+                          <td>{{employee.mobileNumber}}</td>
+                          <td>{{employee.designation}}</td>
+                          <td>{{employee.address}}</td>
+                          <td>{{employee.qualification}}</td>
+                          <td><button  (click)="skillRegister(employee)"> Register </button></td>                                                
+                    </tr>
+                    </tbody>
+                    </table>
+    </form>
+      </div>
+      <div>
+          <app-skill-rgstr [employee]="employeemod"></app-skill-rgstr>
+      </div>

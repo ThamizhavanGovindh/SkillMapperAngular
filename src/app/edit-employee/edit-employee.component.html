@@ -1,0 +1,18 @@
+  <div *ngIf="employee">
+      <h2>Update Employee</h2>
+    <form>      
+          <div><label for="employee_Id">Employee ID:</label>
+          {{employee.employee_Id}}</div><br>         
+          <div><label for="mobileNumber">Mobile Number:</label>
+          <input [(ngModel)]="employee.mobileNumber" name="emplyeeName"></div><br>
+          <div><label for="emailId">Email Id:</label>
+          <input [(ngModel)]="employee.emailId" name="emailId"></div><br>
+          <div><label for="designation">Designation:</label>
+          <input type="email" [(ngModel)]="employee.designation" name="designation"></div><br>
+          <div><label for="address">Address:</label>
+          <input [(ngModel)]="employee.address" name="address"></div><br>
+        <div><label for="qualification">Qualification:</label>
+        <input [(ngModel)]="employee.qualification" name="qualification"></div><br>          
+      <button (click)="editemployee()">Update</button>
+    </form>
+    </div>

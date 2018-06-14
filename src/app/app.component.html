@@ -1,0 +1,22 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}
+  </h1>
+</div>
+
+<nav>
+  <h3>Employee Process</h3>
+  <a routerLink="/AddEmployee">Employee Registration</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a routerLink="/SkillRegistration">SkillRegistration</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a routerLink="/SkillUpdate">Skill Update</a><br>
+  <h3>HR Process</h3>
+  <a routerLink="/HRApproval">HRApproval</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a routerLink="/HRViewEmployee">View Employee</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a routerLink="/SkillSearch">SkillSearch</a><br>
+  <!-- <a routerLink="/HRHome">HR Process</a><br> -->
+</nav>
+
+<div>
+  <router-outlet></router-outlet>
+</div>
